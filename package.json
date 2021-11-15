@@ -1,0 +1,39 @@
+{
+    "name": "learn-solidity",
+    "version": "1.0.0",
+    "description": "Revision for my solidity knowledge",
+    "main": "index.js",
+    "scripts": {
+        "generate-types": "typechain --target=truffle-v5 'build/contracts/*.json'",
+        "postinstall": "truffle compile && yarn generate-types",
+        "migrate": "tsc -p ./tsconfig.migrate.json --outDir ./migrations && truffle migrate",
+        "migrate-reset": "rm -rf ./migrations && tsc -p ./tsconfig.migrate.json --outDir ./migrations && truffle migrate --reset",
+        "typecheck": "tsc --noEmit",
+        "test": "rm -rf ./test && tsc -p ./tsconfig.test.json --outDir ./test && truffle test",
+        "test-reset": "npm run migrate-reset && npm run test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/codewithgun/learn-solidity.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/codewithgun/learn-solidity/issues"
+    },
+    "homepage": "https://github.com/codewithgun/learn-solidity#readme",
+    "dependencies": {
+        "@openzeppelin/contracts": "^4.3.3",
+        "dotenv": "^10.0.0"
+    },
+    "devDependencies": {
+        "@typechain/truffle-v5": "^6.0.0",
+        "@types/bn.js": "^5.1.0",
+        "@types/chai": "^4.2.22",
+        "@types/mocha": "^9.0.0",
+        "@types/node": "^16.11.7",
+        "typechain": "^6.0.2",
+        "typescript": "^4.4.4"
+    }
+}
