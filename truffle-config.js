@@ -18,7 +18,9 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require("@truffle/hdwallet-provider");
+const dotenv = require("dotenv");
+dotenv.config();
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
@@ -46,7 +48,7 @@ module.exports = {
 			host: "127.0.0.1", // Localhost (default: none)
 			port: 7545, // Standard Ethereum port (default: none)
 			network_id: "*" // Any network (default: none)
-		}
+		},
 		// Another network with more advanced options...
 		// advanced: {
 		// port: 8777,             // Custom port
@@ -58,6 +60,14 @@ module.exports = {
 		// },
 		// Useful for deploying to a public network.
 		// NB: It's important to wrap the provider as a function.
+		rinkeby: {
+			provider: () => new HDWalletProvider(process.env.MNEMONIC, process.env.RINKEBY_URL),
+			network_id: 4,
+			gas: 10000000,
+			confirmations: 2,
+			timeoutBlocks: 200,
+			skipDryRun: false
+		}
 		// ropsten: {
 		// provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/YOUR-PROJECT-ID`),
 		// network_id: 3,       // Ropsten's id
@@ -87,7 +97,7 @@ module.exports = {
 			settings: {
 				// See the solidity docs for advice about optimization and evmVersion
 				optimizer: {
-					enabled: false,
+					enabled: true,
 					runs: 200
 				},
 				evmVersion: "byzantium"
