@@ -21,6 +21,7 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const dotenv = require("dotenv");
 dotenv.config();
+const mnemonic = process.env.MNEMONIC;
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
@@ -61,12 +62,19 @@ module.exports = {
 		// Useful for deploying to a public network.
 		// NB: It's important to wrap the provider as a function.
 		rinkeby: {
-			provider: () => new HDWalletProvider(process.env.MNEMONIC, process.env.RINKEBY_URL),
+			provider: () => new HDWalletProvider(mnemonic, process.env.RINKEBY_URL),
 			network_id: 4,
 			gas: 10000000,
 			confirmations: 2,
 			timeoutBlocks: 200,
-			skipDryRun: false
+			skipDryRun: true
+		},
+		mumbai: {
+			provider: () => new HDWalletProvider(mnemonic, process.env.MUMBAI_RPC_URL),
+			network_id: 80001,
+			confirmations: 2,
+			timeoutBlocks: 200,
+			skipDryRun: true
 		}
 		// ropsten: {
 		// provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/YOUR-PROJECT-ID`),
@@ -99,10 +107,15 @@ module.exports = {
 				optimizer: {
 					enabled: true,
 					runs: 200
-				},
-				evmVersion: "byzantium"
+				}
+				// evmVersion: "byzantium"
 			}
 		}
+	},
+
+	plugins: ["truffle-plugin-verify"],
+	api_keys: {
+		etherscan: process.env.ETHERSCAN_API_KEY
 	}
 
 	// Truffle DB is currently disabled by default; to enable it, change enabled:
