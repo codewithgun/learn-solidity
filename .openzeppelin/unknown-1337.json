@@ -1,0 +1,320 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x328Ade8fEd6fF76dC767Fb361ee1a4C6c84Aa281",
+    "txHash": "0x071046b6487441d3db72ba6b4f4692715ec4ebd5c45581f02f897a36e3c9b8d1"
+  },
+  "proxies": [
+    {
+      "address": "0x0c4E25eb5F8f6920C55F568ed82AF7DA58780817",
+      "txHash": "0x819a1480922087ebdf007972694208c48aab1a2d0b820dc991a7eb7167cdc888",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x825bCB0D5b8281D112006765e5012416fB65f77c",
+      "txHash": "0x8ac692f5e29a62d9935ff59451bea30905d449b777fbe827ab67142d7880ea96",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3cbc8B01172B5a9fe906202E233B4Fb130b51605",
+      "txHash": "0x7cffb24f8e5ef4a3c452be6fafc0d180e2e14071bfd6960697bbc44ecfa40324",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x12176fdC47Bc6e8dc42e0E200b17bf38403856ef",
+      "txHash": "0x53ea0bf3f7ed1e1d41e830e4c2ce9e99319a482d0b1328d6788323847d7347f2",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x11070f43E1CFFDad7A950F811A662B5E9CC1b9eA",
+      "txHash": "0xef49f5f99dff070c4d40949d2597674510670838968512f12d9f1f29ee488b5d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x61F4E8145a0530A7bcD8F21E1bb887fE8c1B9a0d",
+      "txHash": "0x5fbabc8cb9bdbd4d1d5985b899745b063a412228b4c4d67da87e64f8e98e32a6",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xadC66a4144204bc99C1A27092709b5e37b67822e",
+      "txHash": "0x4ba8941cdff306cac3564518b3b65ca5343cf1ef3e547f3370692709739e0729",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x6c2df51aD28E1908c834232344aa1FE2631d3DE1",
+      "txHash": "0x2fc56fac3a7b29f93e63473625a90839e9ab7803e8aa73f7293cf61c9383e483",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xa3CcC8082d833655EaBCfcCa5382cfdBF206b83d",
+      "txHash": "0x9a969af0b51a74542f55ab8779d8dfd7db42c9112efa84fe6ee770830410f5e6",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xD2DeFC9Dc12137A5b079aF0acA808a9Dd527Bac2",
+      "txHash": "0x03c212ff11f1b0e64a88169809acebe641e967da65b9e171ea772defd5b69b8e",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x18416eb653458eC395F38b5a84D6C9A21A783396",
+      "txHash": "0xe32df5727f5d5b88d2c0ce2210d2f8e75a1c7cda0c9bbae9c1a64557ed960722",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xAECF9f9aa12Ca5102E4fC528311BeA09181a20cb",
+      "txHash": "0xb7cec369301133749674f64f2f6f0814f28847002d1f27fa299f49525e755717",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x789379F6cCb7Db688eCFe3D249b99e0755469B30",
+      "txHash": "0xdb2125f059860c38607c89b175e3153581236f44051295e057487e8b3d16375d",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "240092d8fdacba37edfbdd6e82888d07dd12b2de0e5ab51375ea410d12c7dfcb": {
+      "address": "0x0Ed468cead31c05755f1f6e8D296821423Ed7763",
+      "txHash": "0xb26bee355855fcd9aaba5d9e3fe0e0f3b5e3ded714e998ce52a8aee68b948f44",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Box",
+            "label": "value",
+            "type": "t_uint256",
+            "src": "../project:/contracts/OpenzeppelinBox/Box.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "6eb64956524003f120131f7e7b78008018ae526d2281480a5287e5c135e39e5e": {
+      "address": "0xAc399c1954ddd53923EF2Cd1e72D6ae2287b3189",
+      "txHash": "0x1a5d90ed4723d57609a627da1fd4e7e98466bdd1b07c487109c519455e5fdd17",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:133"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:138"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:190"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:228"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:230"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:232"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:234"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:235"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:553"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:576"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:632"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "f4b525f033d287b48662a0ca3b714113e293a3e30866ff64a71afeda266ea5d5": {
+      "address": "0x5408f86853225AfEd7Bb387caEe26547EA61eba4",
+      "txHash": "0x03bb2229d29d4f1fd9636d11274e84b8ee520f8d6db95bf6bb88576a54f973db",
+      "layout": {
+        "storage": [
+          {
+            "contract": "BoxV2",
+            "label": "value",
+            "type": "t_uint256",
+            "src": "../project:/contracts/OpenzeppelinBox/BoxV2.sol:4"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "3102dc385f761b04b3274a09c4dc3927e5f51f328aeccc52b01d62d1ae1820a2": {
+      "address": "0xe3C08F1adAc70b39e10D16fE798c44136Eb40024",
+      "txHash": "0x9a3ec7bb24cee0b6c70dc134ad41d8e0e65562774ad9ddab873ff1531568502c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:133"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:138"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:190"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:228"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:230"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:232"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:234"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:235"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:553"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:576"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:632"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}

@@ -116,7 +116,10 @@ module.exports = {
 	plugins: ["truffle-plugin-verify"],
 	api_keys: {
 		etherscan: process.env.ETHERSCAN_API_KEY
-	}
+	},
+
+	contracts_directory: "./contracts",
+	contracts_build_directory: "./build/contracts"
 
 	// Truffle DB is currently disabled by default; to enable it, change enabled:
 	// false to enabled: true. The default storage location can also be

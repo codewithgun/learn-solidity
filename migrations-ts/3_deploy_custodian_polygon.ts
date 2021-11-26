@@ -4,7 +4,7 @@ dotenv.config({
 	path: path.join(__dirname, "..", ".env")
 });
 
-const CustodianERC721Polygon = artifacts.require("PangolinBeta");
+const CustodianERC721Polygon = artifacts.require("CustodianERC721Polygon");
 const name: string = process.env.COLLECTION_NAME || "";
 const symbol: string = process.env.COLLECTION_SYMBOL || "";
 
