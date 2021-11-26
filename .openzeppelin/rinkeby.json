@@ -1,0 +1,222 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xbaAf682EC67038f61Bd8dCa4AAc628D1900a3b03",
+    "txHash": "0x47224df7536353643fbaf47dad5ecf66392b19a6a16d8e80fb9882630399cdfe"
+  },
+  "proxies": [
+    {
+      "address": "0x6896D3eA7Df1fFC3Cfd5442f9677bEf7fAD14ad6",
+      "txHash": "0x199dd46e504d8ee4f5ccbe67ee2ab8a79f21e2aea20dc34d7bee16d70f6c85a3",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "6eb64956524003f120131f7e7b78008018ae526d2281480a5287e5c135e39e5e": {
+      "address": "0xC9D943aE10e468ED3eEd28DB9002D20C01cEA31C",
+      "txHash": "0x502e0515c8c602f5f1c3f3da8d83f7d19a364f8b1fdb988c7ba07670b4207f72",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:133"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:138"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:190"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:228"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:230"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:232"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:234"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:235"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:553"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:576"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:632"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    },
+    "3102dc385f761b04b3274a09c4dc3927e5f51f328aeccc52b01d62d1ae1820a2": {
+      "address": "0x94cF728063685b4b7F3065B4C39BE894A29D79B8",
+      "txHash": "0x80e2fef996618e051641fdc209ac5d75911054fe808ccfa74bfbf734bf2493d3",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:133"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:138"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:190"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:228"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:230"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:232"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_name",
+            "type": "t_string_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:234"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "_symbol",
+            "type": "t_string_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:235"
+          },
+          {
+            "contract": "ERC20Upgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)45_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:553"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:576"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../project:/contracts/OpenzepplinProxy/flatten/FlattenCTokenV2.sol:632"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_array(t_uint256)45_storage": {
+            "label": "uint256[45]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}
