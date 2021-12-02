@@ -50,6 +50,11 @@ module.exports = {
 			port: 7545, // Standard Ethereum port (default: none)
 			network_id: "*" // Any network (default: none)
 		},
+		development2: {
+			host: "127.0.0.1",
+			port: 8545,
+			network_id: "*"
+		},
 		// Another network with more advanced options...
 		// advanced: {
 		// port: 8777,             // Custom port
@@ -115,7 +120,8 @@ module.exports = {
 
 	plugins: ["truffle-plugin-verify"],
 	api_keys: {
-		etherscan: process.env.ETHERSCAN_API_KEY
+		etherscan: process.env.ETHERSCAN_API_KEY,
+		polygonscan: process.env.POLYGONSCAN_API_KEY
 	},
 
 	contracts_directory: "./contracts",
